@@ -1,0 +1,38 @@
+<!-- templates/contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Contact</title>
+    <!-- Add your CSS styles or link to a CSS framework here -->
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>Feel free to get in touch!</p>
+    </header>
+
+    <section>
+        <!-- Add a simple contact form here -->
+        <form method="post" action="/contact">
+            <!-- Include form fields (name, email, message) from the FlaskForm in app.py -->
+            {{ form.hidden_tag() }}
+            <label for="name">Name:</label>
+            {{ form.name() }}
+            <label for="email">Email:</label>
+            {{ form.email() }}
+            <label for="message">Message:</label>
+            {{ form.message() }}
+            {{ form.submit() }}
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
