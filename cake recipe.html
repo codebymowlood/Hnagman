@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link herf="index.css" rel="stylesheet" type="text/css">
+       <style>
+        body { font-family: Arial; color: slategrey;}
+
+        #container {
+            width: 60%;
+            margin: auto;
+        }
+        h1{font-size:300% }
+        h1,h2{color:orange;
+            text-transform:uppercase;
+            font-weight: 100;
+        }
+        img{
+            width:100% ;
+        }
+        footer{	margin-top: 70px;
+            background-color: orange;
+            color: white;}
+        footer p{
+            text-align: center;
+            margin-top: 20px ;
+            margin-bottom: 20px ;
+        }
+        @media screen and (max-width:768px){
+            #container{
+                width: 90%;
+            }
+            h1{font-size: 200%;}
+
+        }
+        
+       </style> 
+
+    </head>
+    <body>
+        <div id="container"> 
+            <header>
+                <h1> How to make velvet cack </h1>
+                <img src="https://i.imgur.com/olgmsNv.png" 
+                alt="red velvet cake">
+
+                <p>
+                    Red velvet cake is a popular and visually striking dessert that's known for its rich,
+                    moist texture and a hint of cocoa flavor. The cake has a distinctive deep red or reddish-brown color,
+                    and it is often layered with cream cheese frosting, which complements the cake's sweetness. 
+                    The vibrant red color is traditionally achieved through the use of red food coloring, 
+                    although some recipes also use natural ingredients like beet juice.
+                    Other key ingredients in red velvet cake include buttermilk, vinegar, and a small amount of cocoa powder.
+                    The origins of red velvet cake are a bit unclear, but it became particularly popular in the United States, 
+                    especially in the southern region. It's often associated with celebrations and special occasions,
+                    and its unique flavor and appearance make it a favorite for many dessert enthusiasts.
+                    </p>
+            </header>
+            <section id=" Ingredients" onmouseover="IngredientsHover()" onmouseout="IngredientsNormal()">
+                <h2> Ingredients <i class="fa fa-coffee" aria-hidden="true"></i> </h2>
+                <p>For the cack:</p> 
+                <ul>
+                    <li>2 1/2 cups all-purpose flour</li>
+                        <li>1 1/2 cups granulated sugar</li>
+                        <li>1 teaspoon baking powder</li>
+                        <li>1 teaspoon baking soda</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 teaspoon cocoa powder</li>
+                        <li>1 1/2 cups vegetable oil</li>
+                        <li>cup buttermilk, room temperature</li> 
+                        <li>2 large eggs, room temperature</li>
+                        <li>2 tablespoons red food coloring</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1 teaspoon white or apple cider vinegar</li>
+                </ul>
+                    <p>For the cream cheese frosting:</p>
+                    <ul>
+                        <li> 16 ounces cream cheese, softened</li>
+                            <li>1 cup unsalted butter, softened</li>
+                            <li>4 cups powdered sugar</li>
+                            <li>1 teaspoon vanilla extract</li>
+                    </ul>
+            
+            </section>
+            <section id="Prepration" onmouseover="PreprationHover()" onmouseout="PreprationNormal()">
+                <h2> Prepration <i class="fa fa-check-circle" aria-hidden="true"></i> </h2>
+                <p>For the cack:</p>
+                <ol>
+                    <li>Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li> 
+                    <li>In a medium bowl, whisk together flour, sugar, baking powder, baking soda, salt, and cocoa powder. Set aside.</li>
+                    <li>In a large bowl, beat together oil, buttermilk, eggs, food coloring, vanilla extract, and vinegar until well combined.</li>
+                    <li>Gradually add the dry ingredients to the wet ingredients, mixing until just combined. Be careful not to overmix.</li>
+                    <li>Divide the batter evenly between the prepared pans.</li>
+                    <li>Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out clean.</li>
+                    <li>Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out clean.</li>
+                </ol> 
+                <p> For the cream cheese frosting: </p>
+                <ol>
+                    <li>In a large bowl, beat together cream cheese and butter until smooth.</li>
+                    <li>Add powdered sugar, one cup at a time, beating well after each addition.</li>
+                    <li>Stir in vanilla extract. </li>
+                    <li>Once the cakes are completely cooled, spread a layer of cream cheese frosting on top of one cake layer.
+                        Place the second layer on top and frost the top and sides of the entire cake.</li>
+                    <li>Optionally, you can decorate the cake with additional frosting, chopped nuts, or cake crumbs.</li>
+                    <li>Slice and enjoy your delicious homemade red velvet cake!</li>
+                </ol>
+            </section>
+            <footer> 
+                <p>&copy; 2023 Mowlood Izadi. All rights reserved.
+            </footer>
+        </div>
+        <script src="script.js"> 
+
+        function ingredientsHover(){
+            document.getElementById('Ingredients').firstElementChild.firstElementChild.style.fontSize ="400%";
+        }
+        function ingredientsNormal(){
+            document.getElementById('Ingredients').firstElementChild.firstElementChild.style.fontSize ="100%";
+        }
+        function PreprationHover(){
+            document.getElementById('Prepration').firstElementChild.firstElementChild.style.fontSize ="400%";
+        }
+        function PreprationHover() {
+            document.getElementById('Prepration').firstElementChild.firstElementChild.style.fontSize = "100%";
+} 
+        </script>
+        </body>
+</html>
